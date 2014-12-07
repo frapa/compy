@@ -5,7 +5,7 @@ class Domain(object):
         self.start = start
         self.end = end
         self.step_num = step_num + 1
-        self.step = float(self.end - self.start) / float(step_num)
+        self.step = float(self.end - self.start) / float(self.step_num)
 
     def get_value(self, n):
         return self.start + self.step * n
